@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  background-color: blue;
+  line-height: 70px;
+  padding-left: 30px;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+.logout {
+  float: right;
+  padding-right: 30px;
+}
+ul {
+  background-color: black;
+  width: 16%;
+  height: 100%;
+  position: fixed;
+  padding-top: 5%;
+  text-align: center;
+}
+ul li {
+  list-style: none;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+ul li a {
+  color: white;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+.content {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: hsl(240, 72%, 50%);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  background-color: #232323;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px 20px;
+}
+li {
+  list-style: none;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-menu input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger-lines {
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #232323;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header {
+  background-color: #1c2331;
+}
+
+.menu-items {
+  padding-top: 100px;
+  transform: translateX(-110%);
+  transition: transform 0.4s ease-in-out;
+  background: #232323;
+  color: #fff;
+  margin-top: -15px;
+  margin-left: -15px;
+  padding-bottom: 20px;
+}
+
+.menu-items li {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.hamburger-menu input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0%);
+}
+
+.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line {
+  background: #fff;
+}
+
+/* New styles added for the label element */
+.hamburger-menu label {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 40px;
+  height: 32px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.hamburger-menu label:hover .line {
+  background-color: #1abc9c;
+}
+
+.menu-items a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: #1abc9c;
+}
